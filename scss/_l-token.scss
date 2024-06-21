@@ -58,12 +58,25 @@
       border: none;
       background: url(../assets/copy-icon.svg) center no-repeat;
       background-size: 32px;
+      transition: all ease-in-out 0.2s;
       cursor: pointer;
 
       @include tablet {
         height: 26px;
         width: 26px;
         background-size: 26px;
+      }
+
+      &:hover {
+        transform: scale(1.06);
+      }
+
+      &:active {
+        transform: scale(0.94);
+      }
+
+      &.active {
+        background-image: url(../assets/ok-icon.svg);
       }
     }
   }

@@ -246,6 +246,7 @@ img {
   border: none;
   background: url(../assets/copy-icon.svg) center no-repeat;
   background-size: 32px;
+  transition: all ease-in-out 0.2s;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -254,6 +255,15 @@ img {
     width: 26px;
     background-size: 26px;
   }
+}
+.token__main-copy:hover {
+  transform: scale(1.06);
+}
+.token__main-copy:active {
+  transform: scale(0.94);
+}
+.token__main-copy.active {
+  background-image: url(../assets/ok-icon.svg);
 }
 .token__figure-image {
   display: block;
