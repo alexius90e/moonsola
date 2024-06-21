@@ -235,3 +235,105 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.buy-token {
+  margin: 0 0 40px;
+}
+@media (max-width: 768px) {
+  .buy-token {
+    margin: 0 0 20px;
+  }
+}
+.buy-token__title {
+  margin: 0 0 40px;
+  font-weight: 800;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .buy-token__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .buy-token__title {
+    margin: 0 0 20px;
+    font-size: 36px;
+  }
+}
+.buy-token__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .buy-token__wrapper {
+    flex-direction: column;
+  }
+}
+.buy-token__wrapper > * {
+  flex: 0 0 calc(50% - 10px);
+}
+@media (max-width: 992px) {
+  .buy-token__wrapper > * {
+    flex: 0 1 auto;
+  }
+}
+.buy-token__figure-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.buy-token__list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media (max-width: 992px) {
+  .buy-token__list {
+    gap: 20px;
+    width: 100%;
+  }
+}
+.buy-token__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+  padding-left: 108px;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-size: 32px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background: url(../assets/star-icon.svg) center left 20px no-repeat;
+  background-size: 64px;
+}
+@media (max-width: 992px) {
+  .buy-token__list-item {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .buy-token__list-item {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .buy-token__list-item {
+    padding-left: 80px;
+    font-size: 20px;
+    background-size: 40px;
+  }
+}
+.buy-token__list-item-title {
+  font-weight: 800;
+}
+.buy-token__list-item-text {
+  font-weight: 600;
+}
