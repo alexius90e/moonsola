@@ -1,6 +1,10 @@
 .main-description {
   margin: 0 0 40px;
 
+  @include tablet {
+    margin: 0 0 20px;
+  }
+
   & .container {
     display: flex;
     align-items: center;

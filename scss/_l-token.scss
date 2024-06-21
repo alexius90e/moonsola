@@ -1,0 +1,78 @@
+.token {
+  margin: 0 0 40px;
+
+  @include tablet {
+    margin: 0 0 20px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 0 40px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: rgba(0, 34, 98, 0.25);
+    backdrop-filter: blur(4px);
+
+    @include tablet {
+      gap: 12px;
+      margin: 0 0 20px;
+      border-radius: 12px;
+    }
+
+    @include mobile {
+      padding: 12px 16px;
+    }
+
+    &-code {
+      display: inline-block;
+      max-width: calc(100% - 40px);
+      font-weight: 600;
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-wrap: nowrap;
+
+      @include laptop {
+        font-size: 24px;
+      }
+
+      @include tablet {
+        font-size: 20px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &-copy {
+      display: inline-block;
+      height: 32px;
+      width: 32px;
+      border: none;
+      background: url(../assets/copy-icon.svg) center no-repeat;
+      background-size: 32px;
+      cursor: pointer;
+
+      @include tablet {
+        height: 26px;
+        width: 26px;
+        background-size: 26px;
+      }
+    }
+  }
+
+  &__figure {
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
