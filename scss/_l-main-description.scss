@@ -1,0 +1,46 @@
+.main-description {
+  margin: 0 0 40px;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__figure {
+    flex: 0 0 calc(50% - 10px);
+    display: flex;
+    align-items: flex-start;
+
+    @include laptop {
+      flex: 0 0 auto;
+    }
+
+    &-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    flex: 0 0 calc(50% - 10px);
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    color: #fff;
+
+    @include laptop {
+      flex: 0 0 auto;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
