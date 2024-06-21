@@ -1,2 +1,25 @@
 .footer {
+  & .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 2px solid #ffffff;
+
+    @include mobile {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__disclaimer {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #fff;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
 }

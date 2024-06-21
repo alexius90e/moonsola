@@ -103,6 +103,31 @@ img {
   }
 }
 
+.footer .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 2px solid #ffffff;
+}
+@media (max-width: 576px) {
+  .footer .container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.footer__disclaimer {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .footer__disclaimer {
+    font-size: 16px;
+  }
+}
+
 .main-description {
   margin: 0 0 40px;
 }
