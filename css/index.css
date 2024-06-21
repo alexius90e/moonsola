@@ -12,6 +12,8 @@ body {
   margin: 0;
   overflow-y: scroll;
   color: #181d42;
+  background: url(../assets/bg-min.webp) center;
+  background-size: 100px;
   background-color: #ffffff;
 }
 
@@ -38,4 +40,26 @@ img {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+}
+
+.header {
+  padding: 40px 0 60px;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  color: #fff;
+}
+.header__title-main {
+  font-size: 64px;
+}
+.header__title-addition {
+  font-size: 40px;
 }
