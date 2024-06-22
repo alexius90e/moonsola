@@ -297,6 +297,9 @@ img {
     font-size: 36px;
   }
 }
+.buy-token__title-link {
+  color: inherit;
+}
 .buy-token__wrapper {
   display: flex;
   align-items: center;
